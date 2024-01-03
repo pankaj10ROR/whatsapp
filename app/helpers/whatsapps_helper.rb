@@ -1,0 +1,2 @@
+module WhatsappsHelper
+end

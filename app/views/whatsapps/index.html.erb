@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Whatsapps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @whatsapps.each do |whatsapp| %>
+      <tr>
+        <td><%= whatsapp.name %></td>
+        <td><%= whatsapp.email %></td>
+        <td><%= whatsapp.number %></td>
+        <td><%= link_to 'Show', whatsapp %></td>
+        <td><%= link_to 'Edit', edit_whatsapp_path(whatsapp) %></td>
+        <td><%= link_to 'Destroy', whatsapp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Whatsapp', new_whatsapp_path %>

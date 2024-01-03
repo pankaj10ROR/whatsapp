@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @whatsapp.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @whatsapp.email %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @whatsapp.number %>
+</p>
+
+<%= link_to 'Edit', edit_whatsapp_path(@whatsapp) %> |
+<%= link_to 'Back', whatsapps_path %>
